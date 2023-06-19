@@ -1,4 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7107413&assignment_repo_type=AssignmentRepo)
 # Analyzing and Predicting Graduation Rate of Universities
 
 ## Executive Summary
@@ -392,35 +391,35 @@ A heatmap is used to understand the correlation between the variables in the dat
 
 Similarly, some of the strong positive correlations are for number of applications, number of applicants accepted and number of enrolled students.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/15.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/15.png)
 
 ### **Comparison of tuition and other expenses with graduation rate**
 
 We would like to explore the relationship between the financial aspect of a college and it is graduation rate. To understand this, a scatter plot is created to visualize the impact of cost on graduation rate. It appears that as the tuition cost increases, the graduation rate also linearly increases. However, miscellaneous cost does not appear to have a significant relationship with the graduation rate. For most colleges, the miscellaneous cost such as room rent, books and so on ranges between $5,000 - $7,000.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/16.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/16.png)
 
 
 ### **Relationship between top-performing high school students and graduation rate**
 
 We plot a bar chart to understand if there is an existing relationship between the graduation rate and top performing high school students. The dataset included information on the percentage of top 10 and top 25 high school students that each college enrolled. From the below visualizations, we can see that as the percentage of top-performing students increases, the graduation rate also increases. Therefore, the caliber of a student plays a role in the overall graduation rate of a college.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/17.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/17.png)
 
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/18.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/18.png)
 
 
 ### **Relationship between Graduation rate with Percentage of PhD faculty and type of college**
 
 To understand the relationship between graduation rate and the faculties present in a university, we create two scatter plot – private and public colleges. With an increase in the number of PhD faculty, the graduation rate also increases for a college. This behavior is more pronounced in private colleges, probably since private colleges can afford to recruit high-salary PhD faculty, thereby increasing the quality of education.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/19.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/19.png)
 
 
 Further, to understand the distribution of faculty (PhD and Terminal) in private and public colleges a bar chart is utilized. In comparison to non-private colleges, private colleges have a lower percentage of PhD and Terminal faculty. In general, % of PhD faculty are lower than the % of terminal faculty in both private and non-private colleges.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/20.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/20.png)
 
 
 From the above visualizations, we can conclude that the some of the major features that could influence modelling are the financial data such as outstate tuition, performance of students (% of top 10 and top 25 high school students), and the education level of the faculty.
@@ -519,16 +518,16 @@ But before training the model, we need to make sure that the assumptions of regr
 
 Most of the variables had an almost linear relationship with the graduation rate. We can see that through the following graphs.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/21.png)
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/22.png)
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/23.png)
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/24.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/21.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/22.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/23.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/24.png)
 
 Some of the variables like &#39;no\_of\_enrolled&#39;, &#39;no\_of\_FT&#39;, &#39;pct\_phd\_faculty&#39; etc. had a non-linear relationship with the &#39;grad\_rate&#39;.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/25.png)
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/26.png)
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/27.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/25.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/26.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/27.png)
 
 
 If these variables do not satisfy other assumptions as well, we will drop them from our model.
@@ -559,7 +558,7 @@ We can see that there is a high correlation between &#39;no\_of\_enrolled&#39; &
 
 Next assumption we need to check is the constant variance. Following is the plot for Residual Values VS Predicted Values:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/28.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/28.png)
 
 Since the plot is equally distributed on both sides of the X-axis, we can say that the assumption for homoscedasticity is satisfied.
 
@@ -567,7 +566,7 @@ Since the plot is equally distributed on both sides of the X-axis, we can say th
 
 To check normally distributed residuals, we created QQ Plot.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/29.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/29.png)
 
 Looking at the plot above, we can say that the residuals are almost normally distributed. The tails suggest that the plot deviates a little from normality and is leptokurtic.
 
@@ -575,19 +574,19 @@ Looking at the plot above, we can say that the residuals are almost normally dis
 
 Durbin\_Watson test was conducted on the dataset to test for independence. The result came out to be non-significant; therefore, we can say that there is no evidence to suggest this assumption is violated.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/30.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/30.png)
 
 We used sklearn library in Python to train and test the model. Firstly, the variables used for training were selected as per our domain knowledge. Then we dropped some variables based on the correlation assumption. Since the model was built on standardized variables, the regression coefficients were used to find the variable importance. Below is the bar graph that depicts the variables and their importance in predicting the Graduation Rate:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/31.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/31.png)
 
 We can see that the variables – &#39;no\_of\_PT&#39;, &#39;outstate\_tuition&#39; and &#39;no\_of\_enrolled&#39; are the most important variables in our model. To check the performance of the model, the following metrics were calculated:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/42.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/42.png)
 
 To visually understand the efficiency of model, we plotted a graph between the actual and the predicted graduation rate:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/32.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/32.png)
 
 The scatter plot almost follows the straight line that suggests that our model can predict the dependent variable better than the base model.
 
@@ -599,11 +598,11 @@ Additionally, the tree was iteratively run for 5 times to compare variability in
 
 All the 5 trees created predicted outstate\_tuition to be the most significant variable, followed by pct\_alumni\_donors, accept\_Rate, Percentage of top 25 high school students. The last significant variable appeared to be differently predicted during the first iteration. Hence we will compare the metrics of the models to decide the prediction of the best iteration.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/33.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/33.png)
 
 Comparing RMSE, Rsquare and Accuracy of each iteration we find the 3rd iteration to have the best-fitting values in each metric. Looking at the results of the 3rd iteration (shown below), we find the last significant variable to be no of enrolled students.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/34.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/34.png)
 
 Looking at the variables selected, clearly outstate tuition makes sense as the most important variable, as cost of tuition is a major concern that leads to students dropping out due to the pressure of debt or unaffordability. The other variable describe the value of education of a university, the acceptance rate, No of enrolled students, percentage of alumni donors and percentage of top 25 high school students – these are factors that add value to a university and talk about the caliber of it&#39;s students. These variables would play a significant role in affecting graduation rate as they could cause students to drop out when there is are changes in the university that affects these factors.
 
@@ -615,11 +614,11 @@ Next, a regression tree, which is a decision tree used to predict continuous tar
 
 The output of the extraTreesRegressor feature selection is as displayed below. Among the selected variables, &#39;outstate\_tuition&#39;, &#39;pct\_alumni\_donors&#39;, and top 10 and 25 high school students appear to be the most important variables in predicting the graduation rate. This implies that the graduation rate is associated with the financial aspect of the education and the caliber of a student&#39;s performance. We will further train our model using these variables to predict graduation rate.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/35.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/35.png)
 
 First, a regression tree model is trained without specific hyperparameters – the metrics of the model is abysmal. With an R-square value of -0.087, the model performs worse than the baseline model. A scatterplot is displayed to visualize the expected and predicted values for the test data – there is no apparent pattern in the predicted and expected graduation rates. This model needs to be fine-tuned to make better predictions.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/36.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/36.png)
 
 
 In order to find the best parameters for our RegressorTree model, we will utilize GridSearch Hyperparameter Tuning. Below are the parameters initialized for hyperparameter selection:
@@ -639,13 +638,13 @@ parameters={"splitter":["best","random"],
 ```
 The best parameters for the decision tree regressor based on the GridSearch evaluation is used in the RegressorTree. The results from the tuned model are as follows:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/43.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/43.png)
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/37.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/37.png)
 
 The above plot is the visualization of predicted and expected graduation rate after tuning the model. The results are much better than the base model. Below is a visualization of the decision tree splits. This model considers percentage of alumni donors as the most important factor and uses it to split the dataset followed by student&#39;s highschool performance and outstate tuition fee.
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/38.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/38.png)
 
 The R-square value has significantly improved from -0.08 to 0.38. This result suggests that the about 38% of variability in graduation rate can be predicted from the selected predictor variables (Outstate Tuition, Percentage of alum donors, Percentage of top 25 high school students, Percentage of top 10 high school students and acceptance rate of the university). In conclusion, the regressor model suggests that the financial cost of education in a university, and the caliber of the enrolled students play an important role in the graduation rate of the university.
 
@@ -674,7 +673,7 @@ model.compile(loss='mean_squared_error', optimizer='adam')
 
 Firstly, the model was fitted with a batch size of 20 and the number of epochs was given as 10. The following were the loss values at each epoch:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/39.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/39.png)
 
 We could see that the loss function value decreased at every iteration. To find out the best parameters, we calculated the accuracy of several models using different permutations of batch size and epochs.
 
@@ -731,11 +730,11 @@ ResultsData=FunctionFindBestParams(X_train, y_train, X_test, y_test)
 
 **Output:** 
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/44.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/44.png)
 
 The highest accuracy was found when the batch size was taken as 15 and epochs were 5. So, we trained the model and predicted the graduation rate using the above parameters. Once the predicted values were calculated, we then found the values for metrics to assess the model performance. Following were its results:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/45.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/45.png)
 
 Model 2: To check if we could improve the performance of the neural network model, we changed the activation functions to &#39;tanh&#39; and &#39;elu&#39; in the first and second layers respectively.
 
@@ -755,11 +754,11 @@ model.compile(loss='mean_squared_error', optimizer='adam')
 ```
 We then followed the same approach as the last NN model for finding the parameters that give the highest accuracy. The best parameter came out to be batch\_size=15 and epochs=5
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/40.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/40.png)
 
 Using these parameters, the dependent variables was predicted and the values for different metrics were calculated as follows:
 
-![alt text](https://github.com/msis5223-pds2-2022spring/msis-5223-deliverable-2-cobra-kai/blob/main/assets/41.png)
+![alt text](https://github.com/ssrivas1/SpringProject/tree/main/assets/41.png)
 
 ## **Model Assessment**
 
